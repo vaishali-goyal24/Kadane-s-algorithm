@@ -1,0 +1,17 @@
+ int maxSubarraySum(int arr[], int n){
+        
+          int maxele=0,maxsum=INT_MIN;
+      for(int i=0;i<n;i++)
+      {maxele=maxele+a[i];
+          if(maxsum<maxele)
+          {
+              maxsum=maxele;
+          }
+          if(maxele<0)
+          {
+              maxele=0;
+          }
+      }
+        return maxsum;
+        
+    }
